@@ -1,63 +1,95 @@
 /****************Base Styles*******************/
-h1{ 
-	font-family: 'Comic Sans MS';
-	position: static;
-	
-	height: auto;
-	width: auto;
+.navbar-brand h1 { /* Restaurant name */
+  font-size: 1.5em;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  text-align: left;
+  font-family: 'Comic Sans MS';
 }
-.black{
+
+h1 {
+	font-family: 'Comic Sans MS';
+	text-align: center;
+}
+.navbar-header{
+	background-color: #808080;
+}
+#header-nav{
+	background-color: #808080;
+	border: 1px solid black;
+
+}
+
+.navbar-collapse > ul { 
+	background: #FFFFFF;
+	margin: 0; 
+	
+}
+
+#collapsable-nav {
+	margin: 0;
+	padding: 0;
+	position: fixed; top:2%; right:2%;
+}
+
+#nav-list a{
+  	color: #951c49;
+  	font-size: 1.4em;
+	text-align:center;
+  	display: block;
+  	text-decoration: none;
+  	border: 1px solid black;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 0px;
+}
+
+.chicken{
 	color: #000000;
-	border: 1px solid black;
-	padding-top: 3px;
+	padding-top: 5px;
 	padding-bottom: 3px;
-	padding-right: 20%;
-	padding-left: 20%;
-	background-color: #F08080;
+	background-color: #808080;
 	font-family: 'Comic Sans MS';
-	position: relative;
-	float: right;
-	margin-top: -1px;
-	margin-right: -1px;
-	display: inline-block;
-	
-	
+	float: center;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: 0px;
 }
 
-
-.white{
-	color: #FFFFFF;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-right: 20%;
-	padding-left: 20%;
-	border: 1px solid black;
-	background-color: #800000;
-	font-family: 'Comic Sans MS';
-	position: relative;
-	float: right;
-	margin-top: -1px;
-	margin-right: -1px;
-
-
-}
-.black2{
+.beef{
 	color: #000000;
-	padding-top: 3px;
+	padding-top: 5px;
 	padding-bottom: 3px;
-	padding-right: 20%;
-	padding-left: 20%;
-	border: 1px solid black;
-	background-color: #F0E68C;
+	background-color: #808080;
 	font-family: 'Comic Sans MS';
-	position: relative;
-	float: right;
-	margin-top: -1px;
-	margin-right: -1px;
+	float: center;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: 0px;
+}
+
+.sushi{
+	color: #000000;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	background-color: #808080;
+	font-family: 'Comic Sans MS';
+	float: center;
+	margin-top: 0px;
+	margin-right: 0px;
 }
 
 section{
 	display: inline-block;
+}
+
+section > h2{
+	text-align: center;
 }
 
 .s1{
@@ -65,148 +97,43 @@ section{
 	float:left;
 	clear: both;
 	padding-left: 3%;
+	padding-right: 3%;
 	padding-bottom: 3%;
-
-
 }
+
 .s2{
 	position: relative;
 	float:left;
 	clear: both;
 	padding-left: 3%;
+	padding-right: 3%;
 	padding-bottom: 3%;
-
-
 }
+
 .s3{
 	position: relative;
 	float:left;
 	clear: both;
 	padding-left: 3%;
+	padding-right: 3%;
 	padding-bottom: 3%;
-	background-color: #808080;
-
-
 }
 
-body{
-	
-}
 #p1{
 	background-color: #808080;
-	border: 1px solid black;
 	margin: 1%;
-
 }
+
 #p2{
 	background-color: #808080;
-	border: 1px solid black;
 	margin: 1%;
-
-	
-	
-
 }
+
 #p3{
 	background-color: #808080;
-	border: 1px solid black;
 	margin: 1%;
-	
-
 }
 
 
-/*************Large Devices Only************/
-@media (min-width: 992px) {
-	
-	
-	#p1{
-		width: 31.3%;
-		float: left;
-		display: inline-block;
-		box-sizing: border-box;
-
-	}
-
-	#p2{
-		width: 31.3%;
-		float: left;
-		display: inline-block;
-		box-sizing: border-box;
-	}
-
-	#p3{
-		width: 31.3%;
-		box-sizing:border-box;
-		float: left;
-		display: inline-block;
-		box-sizing: border-box;
-	}
-
-.black{
-	color: #000000;
-	border: 1px solid black;
-	padding-right: 10%;
-	padding-left: 10%;
-	padding-bottom: 1%;
-	}
 
 
-.white{
-	color: #FFFFFF;
-	padding-right: 10%;
-	padding-left: 10%;
-	border: 1px solid black;
-	padding-bottom: 1%;
-
-
-}
-.black2{
-	color: #000000;
-	padding-right: 10%;
-	padding-left: 10%;
-	border: 1px solid black;
-	padding-bottom: 1%;
-}
-}
-
-/**************Medium Devices Only*****************/
-@media(min-width: 768px) and (max-width: 991px) {
-	
-
-	#p1{
-		width: 47.8%;
-		display: inline-block;
-		float: left;
-		box-sizing: border-box;
-		
-	}
-
-	#p2{
-		width: 47.9%;
-		float: right;
-		
-	}
-	#p3{
-		width: 98%;
-		
-		
-	}
-}
-
-/******************Small Devices Only*****************/
-
-@media(max-width: 767px){
-
-	#p1{
-		width: 98%;
-		
-	}
-	#p2{
-		width: 98%;
-		
-	}
-	#p3{
-		width: 98%;
-	}
-}
